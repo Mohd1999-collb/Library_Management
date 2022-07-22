@@ -194,7 +194,7 @@ function showBooks() {
     let html = '';
     booksobj.forEach(function (element, index) {
         let uiString = `<tr class='tab'>
-                        <td>${index + 1}</td>
+                        <td>${index + 1}.</td>
                         <td>${element.book}</td>
                         <td>${element.author}</td>
                         <td>${element.booktype}</td>
@@ -241,6 +241,5 @@ search.addEventListener('input', function(){
         } else {
             element.style.display = "none";
         }
-        // console.log(cardTxt);
     })
 })
